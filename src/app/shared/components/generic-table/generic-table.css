@@ -1,0 +1,61 @@
+/* ESTILOS PARA TABLA DE CONDUCTORES */
+.drivers-table {
+  border: 1px solid #1b90f0;
+  background-color: #f4f8ff;
+
+}
+
+.drivers-table .mat-header-row {
+  background: linear-gradient(90deg, #1565c0, #1e88e5);
+  color: white;
+}
+
+.drivers-table .mat-header-cell {
+  border-bottom: 2px solid #1565c0;
+}
+
+.drivers-table .mat-cell {
+  color: #0d47a1;
+  border-bottom: 1px solid #e3f2fd;
+}
+
+.drivers-table .mat-row:hover {
+  background-color: #e3f2fd;
+}
+
+/* ESTILOS PARA TABLA DE VEHÍCULOS */
+.vehicles-table {
+  border: 1px solid #00e007;
+  background-color: #f6fff6;
+}
+
+.vehicles-table .mat-header-row {
+  background: linear-gradient(90deg, #2e7d32, #43a047);
+  color: white;
+}
+
+.vehicles-table .mat-header-cell {
+  border-bottom: 2px solid #2e7d32;
+}
+
+.vehicles-table .mat-cell {
+  color: #1b5e20;
+  border-bottom: 1px solid #e8f5e9;
+}
+
+.vehicles-table .mat-row:hover {
+  background-color: #e8f5e9;
+}
+
+/*RESPONSIVE: scroll horizontal en pantallas pequeñas */
+@media (max-width: 768px) {
+  table[mat-table] {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .mat-header-cell, .mat-cell {
+    padding: 12px 16px;
+  }
+}

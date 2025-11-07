@@ -1,0 +1,12 @@
+<h1>Tabla de conductores</h1>
+
+@if (loading()) {
+  <spinner />
+}
+@else {
+  <generic-table
+    [data]="drivers()"
+    [columns]="columns"
+    tableClass="drivers-table"
+  />
+}
