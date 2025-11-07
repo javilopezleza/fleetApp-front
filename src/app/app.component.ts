@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./shared/components/navigation/navbar/navbar";
+import { FooterComponent } from "./shared/components/footer/footer";
 
 
 @Component({
@@ -8,7 +9,8 @@ import { NavbarComponent } from "./shared/components/navigation/navbar/navbar";
   standalone: true,
   imports: [
     RouterOutlet,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
