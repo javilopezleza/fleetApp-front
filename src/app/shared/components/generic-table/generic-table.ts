@@ -15,7 +15,6 @@ export class GenericTable<T> {
 
   @Input({required: true}) columns: {key: keyof T, label: string}[] = [];
 
-  @Input() tableClass = '';
 
   get displayedColumns(): string [] {
     return this.columns.map(c => c.key.toString());

@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="data" [ngClass]="tableClass">
+<table mat-table [dataSource]="data">
 
   @for (col of columns; track col.key) {
       <ng-container [matColumnDef]="col.key.toString()">

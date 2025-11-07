@@ -10,6 +10,10 @@ export const routes: Routes =
     component: IndexPage
   },
   {
+    path: 'inicio',
+    component: IndexPage
+  },
+  {
     path: 'conductores',
     component: DriverPage,
   },
